@@ -1,2 +1,3 @@
-# open_edge-learning
-Basic softwares created to understang programming with Open Edge Progress
+# Open Edge Progress - Basic Sofwares
+Basic softwares created to understand programming with Open Edge Progress;
+
