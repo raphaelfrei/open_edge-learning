@@ -14,3 +14,4 @@ Project Summary:
 - Pim = Pim's Game | [Project in C](https://github.com/raphaelfrei/PIMS_Game)
 - Caesar = Caesar's Cypher | [Project in Python](https://github.com/raphaelfrei/simple-caesar_cypher)
 - TicTac = Tic Tac Toe
+- Fibo = Fibonacci's Sequence Generator
