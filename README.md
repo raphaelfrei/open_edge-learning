@@ -9,6 +9,11 @@ V1.0x is after the code was refined.
 
 .
 
+Tictac V1.05 has DB Integration for Winning and Moves Statistics. It needs tic_statistics.w;
+Caesar V1.03 has DB for words history. It needs caesar_hist.w;
+
+.
+
 Project Summary:
 - Calc = Calculator
 - Pim = Pim's Game | [Project in C](https://github.com/raphaelfrei/PIMS_Game)
