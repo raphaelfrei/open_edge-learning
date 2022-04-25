@@ -1,0 +1,103 @@
+ADD TABLE "caesar_hist"
+  AREA "Schema Area"
+  DUMP-NAME "caesar_hist"
+
+ADD FIELD "unencrypted" OF "caesar_hist" AS character 
+  FORMAT "x(50)"
+  INITIAL ""
+  POSITION 2
+  MAX-WIDTH 512
+  ORDER 10
+
+ADD FIELD "encrypted" OF "caesar_hist" AS character 
+  FORMAT "x(50)"
+  INITIAL ""
+  POSITION 3
+  MAX-WIDTH 512
+  ORDER 20
+
+ADD FIELD "enc_size" OF "caesar_hist" AS integer 
+  FORMAT "-9"
+  INITIAL "0"
+  POSITION 4
+  MAX-WIDTH 4
+  ORDER 30
+
+ADD INDEX "order" ON "caesar_hist" 
+  AREA "Schema Area"
+  PRIMARY
+  INDEX-FIELD "unencrypted" ASCENDING 
+  INDEX-FIELD "encrypted" ASCENDING 
+
+ADD TABLE "tictac"
+  AREA "Schema Area"
+  DUMP-NAME "tictac"
+
+ADD FIELD "xvictory" OF "tictac" AS integer 
+  FORMAT "->,>>>,>>9"
+  INITIAL "0"
+  POSITION 2
+  MAX-WIDTH 4
+  ORDER 10
+
+ADD FIELD "ovictory" OF "tictac" AS integer 
+  FORMAT "->,>>>,>>9"
+  INITIAL "0"
+  POSITION 3
+  MAX-WIDTH 4
+  ORDER 20
+
+ADD FIELD "totalmoves" OF "tictac" AS integer 
+  FORMAT "->,>>>,>>9"
+  INITIAL "0"
+  POSITION 4
+  MAX-WIDTH 4
+  ORDER 30
+
+ADD FIELD "xmoves" OF "tictac" AS integer 
+  FORMAT "->,>>>,>>9"
+  INITIAL "0"
+  POSITION 5
+  MAX-WIDTH 4
+  ORDER 40
+
+ADD FIELD "omoves" OF "tictac" AS integer 
+  FORMAT "->,>>>,>>9"
+  INITIAL "0"
+  POSITION 6
+  MAX-WIDTH 4
+  ORDER 50
+
+ADD FIELD "xloses" OF "tictac" AS integer 
+  FORMAT "->,>>>,>>9"
+  INITIAL "0"
+  POSITION 7
+  MAX-WIDTH 4
+  ORDER 60
+
+ADD FIELD "oloses" OF "tictac" AS integer 
+  FORMAT "->,>>>,>>9"
+  INITIAL "0"
+  POSITION 8
+  MAX-WIDTH 4
+  ORDER 70
+
+ADD FIELD "totalmatches" OF "tictac" AS integer 
+  FORMAT "->,>>>,>>9"
+  INITIAL "0"
+  POSITION 9
+  MAX-WIDTH 4
+  ORDER 80
+
+ADD FIELD "draw" OF "tictac" AS integer 
+  FORMAT "->,>>>,>>9"
+  INITIAL "0"
+  POSITION 10
+  MAX-WIDTH 4
+  ORDER 90
+
+.
+PSC
+cpstream=ISO8859-1
+.
+0000001821
